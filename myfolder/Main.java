@@ -1,7 +1,12 @@
+import java.util.Scanner;
 public class Main
 {
-	publioc static void main(String args[])
+	static Scanner sc = new Scanner(System.in); 
+	public static void main(String args[])
 	{
-		System.out.println("Hello World!");
+		System.out.println("Enter the radius!: ");
+		double radius =sc.nextDouble();
+		double area = Math.PI*(radius*radius);
+		System.out.println("The are of the circle is: " +area);
 	}
 }
